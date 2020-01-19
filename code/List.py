@@ -101,3 +101,10 @@ print(result)
 
 result = sorted(list1,reverse=True)
 print(result)
+
+# 将遍历对象转为枚举
+list2 = ['a','ab','abc']
+for index,value in enumerate(list2):
+    print(index,value)
+for index,value in enumerate('happylay'):
+    print(index,value)
