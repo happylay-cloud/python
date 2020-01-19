@@ -2,17 +2,17 @@ import random
 
 name = 'happy'
 # id() 查看内存地址
-print(id(name),name)
+print(id(name), name)
 
 name = 'lay'
-print(id(name),name)
+print(id(name), name)
 
 # 扩展后赋值符号 += -= *= /=
 
 
 a = 16
 b = 3
-c =2
+c = 2
 
 # + 加
 print(a + b)
@@ -38,19 +38,19 @@ print(a % b)
 # 三元表达式：真结果 if 表达式 else 假结果
 a = 1
 b = 2
-result =(a+b) if a<b else (b-a)
+result = (a + b) if a < b else (b - a)
 print(result)
 
 '''
 if else 语句
 '''
-if a==1:
+if a == 1:
     print('真')
 else:
     print('假')
 
 # 随机数
-print(random.randint(1,10))
+print(random.randint(1, 10))
 
 '''
 for 变量名 in 集合:
@@ -59,5 +59,21 @@ for 变量名 in 集合:
 # 使用系统给定range()完成范围指定
 print(range(8))  # 包含0不包含8
 
-for i in range(8):
+for i in range(100):
+    if i == 10:
+        # 占位符
+        pass
+        break
     print(i)
+
+# range(开始，结束，步长)
+for i in range(1, 20, 5):
+    print('--->', i)
+
+# while循环
+sum_2 = 0
+i = 1
+while i <= 2:
+    sum_2 += i
+    i += 1
+print(sum_2)
