@@ -10,5 +10,30 @@ def 函数名([参数,参数...]):
 
 def generate_random():
     for i in range(10):
-        ran = random.randint()
+        ran = random.randint(1, 20)
         print(ran)
+
+
+print(generate_random)  # 打印函数名
+
+# 调用：函数名（）
+generate_random()
+
+
+# 求随机数的函数
+def generate_random(number):
+    for i in range(number):
+        ran = random.randint(1, 20)
+        print(ran)
+
+
+# 调用
+generate_random(2)
+
+
+def add(a, b):
+    result = a + b
+    print(result)
+
+
+add(1, 2)
