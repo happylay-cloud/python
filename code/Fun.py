@@ -42,7 +42,66 @@ add(1, 2)
 # 可变参数：定义方式
 def add(*args):
     print(args)  # 空元组
+    sum1 = 0
+    if len(args) > 0:
+        for i in args:
+            sum1 += i
+        print('累加和，sum', sum1)
+    else:
+        print('没有元素可计算，sum', sum1)
 
 
 add()
 add(1, 2, 3)
+
+
+# 可变参数：定义方式
+def add(name, age, *args):
+    print(name, age, args)  # 空元组
+    sum1 = 0
+    if len(args) > 0:
+        for i in args:
+            sum1 += i
+        print('累加和，sum', sum1)
+    else:
+        print('没有元素可计算，sum', sum1)
+
+
+add('华为', '18', 1, 2, 3)
+
+
+# 关键词参数：key=value
+def add1(a, b=10, c=20):  # 关键字参数，此时的b就是默认值
+    result = a + b + c
+    print(result)
+
+
+add1(5)
+
+add1(5, 5)
+
+add1(5, c=30)
+
+
+# 关键词参数
+def func(**kwargs):
+    print(kwargs)
+
+
+# 调用
+func(a=1, b=2, c=3)
+
+
+# **persons 装包
+def print_boy(name, **persons):
+    if isinstance(persons, dict):
+        values = persons.values()
+        print(values)
+        for name, age in values:
+            print('{},{}'.format(name, age))
+
+
+students = {'001': ('张艺兴', 18), '002': ('迪丽热巴', 18)}
+
+# **students 拆包
+print_boy('happylay', **students)
