@@ -1,4 +1,4 @@
-# 元祖
+# 元组
 import random
 
 t1 = ()
