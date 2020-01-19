@@ -37,3 +37,12 @@ def add(a, b):
 
 
 add(1, 2)
+
+
+# 可变参数：定义方式
+def add(*args):
+    print(args)  # 空元组
+
+
+add()
+add(1, 2, 3)
