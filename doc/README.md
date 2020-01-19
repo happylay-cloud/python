@@ -27,4 +27,6 @@ pip install -r requirements.txt
 
 # 升级pip
 Python -m pip install --upgrade pip
+
+# pip install redis==3.2.1
 ````
