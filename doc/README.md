@@ -29,4 +29,8 @@ pip install -r requirements.txt
 Python -m pip install --upgrade pip
 
 # pip install redis==3.2.1
+
+# 代码格式化(pycharm)
+file --> settings --> keymap --> eclipse
+ctrl + shift + f
 ````
